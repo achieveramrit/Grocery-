@@ -3,6 +3,10 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
   require("dotenv").config({ path: "backend/.env" });
 }
 
+const PORT = process.env.PORT || 5000;
+
+
+
 const cloudinary = require("cloudinary");
 const expressFileUpload = require("express-fileupload");
 const express = require("express");
@@ -36,8 +40,8 @@ cloudinary.config({
   api_secret: process.env.CLOUD_API_SECRET_KEY,
 });
 
-app.listen(process.env.PORT, "localHost", () => {
-  console.log(`Server Running At http://localhost:${process.env.PORT}`);
+app.listen(process.env.PORT, "0.0.0.0", () => {
+  console.log(`Server running on port ${process.env.PORT}`);
 });
 
 //Load Route
