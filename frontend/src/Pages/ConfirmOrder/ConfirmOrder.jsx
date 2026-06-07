@@ -4,7 +4,7 @@ import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
 import { useSelector } from "react-redux";
 import "./ConfirmOrder.css";
-import axios from "axios";
+import axios from "../../config/axiosConfig";
 import { useState } from "react";
 import Loader from "../../Components/Loader/Loader";
 import OrderPlace from "../OrderPlace/OrderPlace";

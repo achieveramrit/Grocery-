@@ -32,12 +32,12 @@ import {
   UPDATE_USER_ROLE_FAIL,
 } from "../Constants/userConstants";
 
-import axios from "axios";
+import axios from "../../config/axiosConfig";
 
 export const userRegisterAction = (userData) => async (dispatch) => {
   try {
     dispatch({ type: USER_REGISTER_REQUEST });
-    const { data } = await axios.post("api/user/register", userData);
+    const { data } = await axios.post("/api/user/register", userData);
     dispatch({ type: USER_REGISTER_SUCCESS, payload: data });
   } catch (error) {
     dispatch({ type: USER_REGISTER_FAIL, error: error.response.data.message });

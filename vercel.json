@@ -10,10 +10,11 @@
     }
   ],
 
+  
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/backend/index.js"
-    }
+    { "source": "/api/:path*", "destination": "https://amritgrocery.onrender.com/api/:path*" },
+    { "source": "/(.*)", "destination": "/" }
   ]
+
+
 }

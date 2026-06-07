@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "../../config/axiosConfig";
 import {
   GET_ALL_ORDERS_ADMIN_FAIL,
   GET_ALL_ORDERS_ADMIN_REQUEST,

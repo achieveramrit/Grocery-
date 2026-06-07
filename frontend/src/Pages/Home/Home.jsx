@@ -16,7 +16,7 @@ import Loader from "../../Components/Loader/Loader";
 import { useEffect } from "react";
 import { getAllCategoryAction } from "../../Redux/Actions/categoryAction";
 import { getAllReviewsAction } from "../../Redux/Actions/reviewsAction";
-import axios from "axios";
+import axios from "../../config/axiosConfig";
 import { useState } from "react";
 
 const Home = () => {

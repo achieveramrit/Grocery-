@@ -4,7 +4,7 @@ import Header from "../../Components/Header/Header";
 import { MdClose } from "react-icons/md";
 import "./Reviews.css";
 import { useState, useRef } from "react";
-import axios from "axios";
+import axios from "../../config/axiosConfig";
 import Loader from "../../Components/Loader/Loader";
 import { Rating } from "@mui/material";
 import { useSelector } from "react-redux";
